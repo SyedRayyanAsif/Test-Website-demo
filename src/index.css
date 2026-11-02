@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #0b2340;
+  --color-navy-800: #0f2e52;
+  --color-navy-700: #163a63;
+  --color-blue: #1a5fb4;
+  --color-blue-600: #1757a6;
+  --color-blue-500: #2f6fc9;
+  --color-sky: #4f8fe0;
+  --color-sky-100: #e7f1fc;
+  --color-sky-50: #f3f8fe;
+  --color-mint: #3fbfa6;
+  --color-sand: #f6a65c;
+  --color-ink: #10243f;
+  --color-ink-soft: #4c617c;
+  --color-paper: #ffffff;
+  --color-cloud: #f6f9fd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-sky);
+  color: white;
+}
+
+.container-px {
+  @apply px-6 sm:px-8 lg:px-12;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 whitespace-nowrap bg-blue-600 text-white px-7 py-3.5 shadow-[0_8px_24px_-6px_rgba(26,95,180,0.55)] hover:bg-navy hover:shadow-[0_12px_32px_-6px_rgba(11,35,64,0.5)] hover:-translate-y-0.5;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 whitespace-nowrap border-2 border-white/70 text-white px-7 py-3.5 hover:bg-white hover:text-navy;
+}
+
+.btn-outline-dark {
+  @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 whitespace-nowrap border-2 border-navy/15 text-navy px-7 py-3.5 hover:border-blue-600 hover:text-blue-600;
+}
+
+.btn-sm {
+  @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 whitespace-nowrap bg-blue-600 text-white px-5 py-2.5 text-sm hover:bg-navy;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-600;
+}
+
+.card {
+  @apply bg-white rounded-[1.75rem] shadow-[0_10px_40px_-12px_rgba(16,36,63,0.15)] border border-ink/5;
+}
+
+.section-pad {
+  @apply py-20 sm:py-28;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(3deg); }
+}
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(14px); }
+}
+.animate-float-slower {
+  animation: float-slower 9s ease-in-out infinite;
+}
+
+.text-ink { color: var(--color-ink); }
+.text-ink-soft { color: var(--color-ink-soft); }
+.bg-navy { background-color: var(--color-navy); }
+.text-navy { color: var(--color-navy); }
+.bg-cloud { background-color: var(--color-cloud); }

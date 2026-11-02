@@ -1,0 +1,38 @@
+export const dentists = [
+  {
+    slug: 'elena-marsh',
+    name: 'Dr. Elena Marsh',
+    specialty: 'Cosmetic & Restorative Dentistry',
+    experience: '14 years experience',
+    initials: 'EM',
+    bio: 'Elena leads our cosmetic cases, from veneer design to full smile makeovers, with a focus on results that still look natural.',
+    accent: 'blue',
+  },
+  {
+    slug: 'michael-huang',
+    name: 'Dr. Michael Huang',
+    specialty: 'Oral Surgery & Implants',
+    experience: '11 years experience',
+    initials: 'MH',
+    bio: 'Michael specialises in implant placement and oral surgery, known among patients for a calm, precise chairside manner.',
+    accent: 'navy',
+  },
+  {
+    slug: 'sara-ahmadi',
+    name: 'Dr. Sara Ahmadi',
+    specialty: 'Orthodontics',
+    experience: '9 years experience',
+    initials: 'SA',
+    bio: 'Sara plans braces and clear aligner treatment for patients of every age, balancing bite health with everyday comfort.',
+    accent: 'mint',
+  },
+  {
+    slug: 'daniel-brooks',
+    name: 'Dr. Daniel Brooks',
+    specialty: 'Pediatric Dentistry',
+    experience: '8 years experience',
+    initials: 'DB',
+    bio: 'Daniel works with our youngest patients, building a relaxed, friendly first experience with dental care.',
+    accent: 'sand',
+  },
+]
