@@ -33,7 +33,7 @@ This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) th
 deploys to **GitHub Pages** automatically on every push to `main`/`master`. In the repository
 settings, under **Pages**, set the source to **GitHub Actions** once this repo is pushed.
 
-The Vite `base` in `vite.config.js` is set to `/test-website-demo/` to match this repository
+The Vite `base` in `vite.config.js` is set to `/Test-Website-demo/` to match this repository
 name for a GitHub Pages project site. If you rename the repository, update `base` to match.
 
 ## Replacing demo content with a real clinic's information
